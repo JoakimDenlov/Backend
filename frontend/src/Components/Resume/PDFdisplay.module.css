@@ -1,0 +1,10 @@
+.Main {
+  height: 100vh;
+  text-align: center;
+  padding-left: 6%;
+}
+.pdf {
+  margin-top: 5%;
+  width: 45%;
+  height: 75%;
+}

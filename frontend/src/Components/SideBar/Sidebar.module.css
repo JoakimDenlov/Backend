@@ -1,0 +1,44 @@
+.SideBar {
+  text-align: center;
+  height: 100%;
+  width: 17%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(53, 181, 255, 0.514);
+  overflow-x: hidden;
+  padding-top: 30px;
+}
+.Link {
+  margin: 10px;
+  padding-right: 25px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+.Link:hover {
+  font-weight: bold;
+}
+.Active {
+  margin: 10px;
+  padding-right: 25px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  text-decoration: underline;
+}
+.Photo {
+  width: 50%;
+  border-radius: 50%;
+  opacity: 100%;
+}
+.text {
+  color: white;
+}
+.Icons {
+  size: 100em;
+  color: white;
+  padding-top: 3%;
+  margin: 2%;
+}

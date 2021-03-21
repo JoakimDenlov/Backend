@@ -1,0 +1,30 @@
+.Main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.Comment {
+  color: white;
+}
+
+.CreateComment {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.CreateCommentTitle {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.CreateCommentInputField {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

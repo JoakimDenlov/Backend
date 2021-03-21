@@ -9,7 +9,7 @@ const Timeline = () => {
 const [data, setData] = useState(0);
 
 const fetchDataAPI = () => {
-    Axios.get("http://localhost:8080/timeline")
+    Axios.get("/timeline")
     .then((response) => setData(response.data))
     .catch((error) => console.log(error))
 }

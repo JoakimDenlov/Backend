@@ -18,6 +18,14 @@ app.use(helmet());
 app.use(cors());
 app.use(morgan('common'));
 
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('frontend/build'))
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './frontend', 'build', 'index.html'))
+  })
+}
+
 CommentRoutes.routes(app);
 TimelineRoutes.routes(app);
 app.use(middleware.notFound);
@@ -25,11 +33,3 @@ app.use(middleware.errorHandler);
 
 Configuration.connectToDatabase();
 Configuration.connectToPort(app);
-
-if (process.env.NODE_ENV === 'production') {
-    app.use(express.static('frontend/build'))
-  
-    app.get('*', (req, res) => {
-      res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'))
-    })
-  }

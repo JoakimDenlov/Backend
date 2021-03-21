@@ -19,7 +19,7 @@ app.use(helmet());
 app.use(cors());
 app.use(morgan('common'));
 
-  app.use(express.static(path.join(__dirname, './frontend/build')))
+  app.use(express.static(path.join(__dirname, 'frontend/build')))
 
 
 

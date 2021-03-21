@@ -19,18 +19,12 @@ app.use(helmet());
 app.use(cors());
 app.use(morgan('common'));
 
-app.use(express.static('frontend/build'));
-
 
 
 CommentRoutes.routes(app);
 TimelineRoutes.routes(app);
 app.use(middleware.notFound);
 app.use(middleware.errorHandler);
-
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname + './frontend/build/index.html'))
-});
 
 Configuration.connectToDatabase();
 Configuration.connectToPort(app);

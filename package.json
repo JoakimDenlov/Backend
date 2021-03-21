@@ -9,7 +9,7 @@
     "start": "node Server.js",
     "server": "nodemon Server.js",
     "frontend": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run frontend\"",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\""
   },
   "keywords": [
     "RestAPI",
